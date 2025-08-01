@@ -7,10 +7,57 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    transparent: 'transparent',
+                    current: 'currentColor',
+                    blue: {
+                        light: '#85d7ff',
+                        dark: '#009eeb',
+                    },
+                    pink: {
+                        light: '#ff7ce5',
+                        DEFAULT: '#ff49db',
+                        dark: '#ff16d1',
+                    },
+                    gray: {
+                        darkest: '#1f2d3d',
+                        dark: '#3c4858',
+                        DEFAULT: '#c0ccda',
+                        light: '#e0e6ed',
+                        lightest: '#f9fafc',
+                    },
+                },
+                // screens: {
+                //   sm: '480px',
+                //   md: '768px',
+                //   lg: '976px',
+                //   xl: '1440px',
+                //   '2xl': '1560px',
+                // },
+                fontFamily: {
+                    exo2: ['Exo+2', 'sans-serif'],
+                },
+                extend: {
+                    borderRadius: {
+                        t: '2rem',
+                    },
+                },
+            },
+        };
+    </script>
 
     <main>
         <section class="container mx-auto">
@@ -134,7 +181,7 @@
             <div class="w-[100%] h-[620px] mt-[120px]" data-aos="fade-down"  data-aos-delay="100">
               <div data-aos="fade-down"  data-aos-delay="150">
                 <h2 class="font-[600] text-[48px] leading-[125%] text-gray-800 pb-[32px]">Выполненные работы</h2>
-                <p class="leading-[150%] text-gray-400 w-[520px]" >Мы собрали информацию по грузам, которые мы уже доставили. У нас специальный подход к каждому виду товаров.
+                <p class="leading-[150%] text-gray-400 w-[520px]" >Мы собрали информацию по грузам, которые мы уже доставили.У нас специальный подход к каждому виду товаров.
                 </p>
               </div>
 
@@ -200,7 +247,7 @@
                         <div class="w-[330px] h-[62px]">
                             <span class="text-[11px] text-gray-800 leading-[150%]">ООО "ПДВ" ИНН 7329023100 КПП 732901001
                                 433405, Ульяновская обл., Территория Портовой особой Экономической зоны, Проезд Первых Резидентов 
-                                3  Телефон: +78422 99
+                                3 Телефон: +78422 99
                                 666 5 e-mail: info@pdv.ooo</span>
                         </div>
                     </div>
@@ -410,6 +457,114 @@
                             <span class="text-[14px] text-[#6b6b6c] leading-[150%]">Коммерческий банк</span>
                         </div>
                     </div>
+
+                </div>
+
+                <div>
+                    <h2 class="font-[600] text-[48px] leading-[125%] mb-[50px] ">Сотрудники компании</h2>
+                   <div class="flex flex-wrap gap-[50px]">
+                        <div class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[605px] h-[210px] overflow-hidden">
+                            <div class="absolute left-0 top-0 w-[51px] h-full bg-green-900 "></div>
+                            <div class="flex items-center pl-[70px] space-x-6">
+                                <img src="./assets/images/Ellipse 10.png" alt="Anton" class="w-[138] h-[138px] rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[20px] font-semibold">Антон Макаров</h3>
+                                    <p class="text-gray-600 text-[16px] mb-3">Руководитель компании</p>
+                                    <div class="flex gap-4 text-gray-400">
+                                        <i class="fab fa-instagram text-[30px]"></i>
+                                        <i class="fab fa-vk text-[30px]"></i>
+                                        <i class="fab fa-linkedin-in text-[30px]"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                        </div>
+
+                        <div class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[605px] h-[210px] overflow-hidden">
+                            <div class="absolute left-0 top-0 w-[51px] h-full bg-green-900"></div>
+                            <div class="flex items-center pl-[70px] space-x-6">
+                                <img src="./assets/images/Ellipse 11 (1).png" alt="Anton" class="w-[138] h-[138px] rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[20px] font-semibold">Елена Валерьева</h3>
+                                    <p class="text-gray-600 text-[16px] mb-3">Главный бухгалтер</p>
+                                    <div class="flex gap-4 text-gray-400">
+                                        <i class="fab fa-instagram text-[30px]"></i>
+                                        <i class="fab fa-vk text-[30px]"></i>
+                                        <i class="fab fa-linkedin-in text-[30px]"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[605px] h-[210px] overflow-hidden">
+                            <div class="absolute left-0 top-0 w-[51px] h-full bg-green-900"></div>
+                            <div class="flex items-center pl-[70px] space-x-6">
+                                <img src="./assets/images/Ellipse 11.png" alt="Anton" class="w-[138] h-[138px] rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[20px] font-semibold">Иван Аркадьев</h3>
+                                    <p class="text-gray-600 text-[16px] mb-3">Менеджер по закупкам</p>
+                                    <div class="flex gap-4 text-gray-400">
+                                        <i class="fab fa-instagram text-[30px]"></i>
+                                        <i class="fab fa-vk text-[30px]"></i>
+                                        <i class="fab fa-linkedin-in text-[30px]"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[605px] h-[210px] overflow-hidden">
+                            <div class="absolute left-0 top-0 w-[51px] h-full bg-green-900"></div>
+                            <div class="flex items-center pl-[70px] space-x-6">
+                                <img src="./assets/images/Ellipse 10 (1).png" alt="Anton" class="w-[138] h-[138px] rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[20px] font-semibold">Борис Вавилов</h3>
+                                    <p class="text-gray-600 text-[16px] mb-3">Бухгалтер</p>
+                                    <div class="flex gap-4 text-gray-400">
+                                        <i class="fab fa-instagram text-[30px]"></i>
+                                        <i class="fab fa-vk text-[30px]"></i>
+                                        <i class="fab fa-linkedin-in text-[30px]"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                        </div>
+
+                        <div class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[605px] h-[210px] overflow-hidden">
+                            <div class="absolute left-0 top-0 w-[51px] h-full bg-green-900"></div>
+                            <div class="flex items-center pl-[70px] space-x-6">
+                                <img src="./assets/images/Ellipse 10 (2).png" alt="Anton" class="w-[138] h-[138px] rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[20px] font-semibold">Алина Кравец</h3>
+                                    <p class="text-gray-600 text-[16px] mb-3">Сотрудник отдела кадров</p>
+                                    <div class="flex gap-4 text-gray-400">
+                                        <i class="fab fa-instagram text-[30px]"></i>
+                                        <i class="fab fa-vk text-[30px]"></i>
+                                        <i class="fab fa-linkedin-in text-[30px]"></i>
+                                    </div>
+                                </div>
+                            </div>                    
+                        </div>
+
+                        <div class="relative flex items-center bg-white rounded-[10px] shadow-xl w-[605px] h-[210px] overflow-hidden">
+                            <div class="absolute left-0 top-0 w-[51px] h-full bg-green-900"></div>
+                            <div class="flex items-center pl-[70px] space-x-6">
+                                <img src="./assets/images/Ellipse 10.png" alt="Anton" class="w-[138] h-[138px] rounded-full object-cover">
+                                <div>
+                                    <h3 class="text-[20px] font-semibold">Виктор Козуб</h3>
+                                    <p class="text-gray-600 text-[16px] mb-3">Менеджер по закупкам</p>
+                                    <div class="flex gap-4 text-gray-400">
+                                        <i class="fab fa-instagram text-[30px]"></i>
+                                        <i class="fab fa-vk text-[30px]"></i>
+                                        <i class="fab fa-linkedin-in text-[30px]"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                
+                  
 
                 </div>
         </section>
